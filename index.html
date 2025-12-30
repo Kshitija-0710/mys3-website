@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kshitija Randive | DevOps Engineer</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #020617, #0f172a);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            animation: fadeDown 1.2s ease;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            box-shadow: 0 15px 35px rgba(56,189,248,0.35);
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--accent);
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 15px auto;
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            animation: fadeUp 1s ease forwards;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(56,189,248,0.25);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .tags span {
+            display: inline-block;
+            background: rgba(56,189,248,0.15);
+            color: var(--accent);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin: 5px 5px 0 0;
+        }
+
+        .review {
+            font-style: italic;
+            color: var(--muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--muted);
+            border-top: 1px solid #1f2937;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="profile.png" alt="Kshitija Randive" class="profile-pic" />
+    <h1>Kshitija Randive</h1>
+    <p>
+        DevOps Engineer with hands-on experience in AWS, GCP, CI/CD pipelines,
+        containerization, and cloud automation. Focused on building reliable,
+        scalable, and production-ready systems.
+    </p>
+</header>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>IoT Log Analyzer (GCP Serverless)</h3>
+            <p>
+                Built a real-time log ingestion pipeline using Cloud Pub/Sub and
+                Cloud Functions with automated deployment and monitoring.
+            </p>
+            <div class="tags">
+                <span>GCP</span><span>Pub/Sub</span><span>Cloud Functions</span>
+                <span>Shell Script</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>GCP VM Auto Deployment</h3>
+            <p>
+                Automated VM provisioning using Terraform with startup scripts,
+                IAM setup, and reusable modules.
+            </p>
+            <div class="tags">
+                <span>Terraform</span><span>GCP</span><span>IaC</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Stackdriver Monitoring Dashboard</h3>
+            <p>
+                Designed a custom monitoring dashboard for logs and metrics using
+                Google Cloud Monitoring.
+            </p>
+            <div class="tags">
+                <span>Monitoring</span><span>GCP</span><span>Observability</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>YouTube Downloader (Linux Tool)</h3>
+            <p>
+                Bash-based CLI tool with resolution selection, error handling,
+                and clean logging for Linux environments.
+            </p>
+            <div class="tags">
+                <span>Bash</span><span>Linux</span><span>Automation</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Reviews</h2>
+
+    <div class="grid">
+        <div class="card">
+            <p class="review">
+                “Kshitija demonstrated strong DevOps fundamentals and quickly
+                adapted to cloud-native tooling. Her troubleshooting skills
+                stood out.”
+            </p>
+            <strong>— Project Mentor</strong>
+        </div>
+
+        <div class="card">
+            <p class="review">
+                “She consistently delivered clean, automated solutions and
+                showed a solid understanding of CI/CD and infrastructure.”
+            </p>
+            <strong>— Team Lead</strong>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Kshitija Randive • DevOps Engineer • Open to Remote Opportunities
+</footer>
+
+</body>
+</html>

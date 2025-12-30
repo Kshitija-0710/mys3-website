@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Page Not Found | Kshitija Randive</title>
+
+    <style>
+        :root {
+            --bg: #020617;
+            --card: #111827;
+            --text: #e5e7eb;
+            --muted: #9ca3af;
+            --accent: #38bdf8;
+            --danger: #fb7185;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #020617, #0f172a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text);
+        }
+
+        .error-container {
+            background: var(--card);
+            padding: 60px 40px;
+            border-radius: 18px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+            animation: popIn 1s ease;
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            color: var(--danger);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            margin: 15px 0;
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+
+        p {
+            color: var(--muted);
+            margin: 15px 0 30px;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #020617;
+            background: var(--accent);
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(56,189,248,0.4);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="error-container">
+    <div class="error-code">404</div>
+    <h1>Page Not Found</h1>
+    <p>
+        The page you’re looking for doesn’t exist or was moved.
+        This is usually a routing or deployment issue — not your fault.
+    </p>
+
+    <a href="index.html">Go Back Home</a>
+
+    <footer>
+        © 2025 Kshitija Randive • DevOps Engineer
+    </footer>
+</div>
+
+</body>
+</html>
