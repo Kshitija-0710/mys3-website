@@ -26,16 +26,21 @@ The project demonstrates **real-world DevOps practices** such as Infrastructure 
 ---
 
 ## 📂 Repository Structure
-
 .
-├── index.html          # Main portfolio webpage
-├── error.html          # Custom error page (404)
-├── profile.png         # Profile image
-├── main.tf             # Terraform resources
-├── provider.tf         # AWS provider configuration
-├── variables.tf        # Terraform variables
-├── .gitignore          # Git ignore rules
-└── README.md           # Project documentation
+├── error.html                  # Custom error page (404)
+├── index.html                  # Main portfolio webpage
+├── main.tf                     # Terraform resources
+├── output.tf                   # Resources output 
+├── profile.png                 # Portfolio profile picture
+├── provider.tf                 # AWS provider configuration
+├── README.md                   # Project documentation
+├── screenshots
+│   └── portfolio-preview.png   # Final website screenshot
+├── terraform.tfstate           # Terraform state file
+├── terraform.tfstate.backup    # terraform state file backup 
+└── variables.tf                # Terraform variables
+├── .gitignore                  # Git ignore rules
+
 
 ---
 
@@ -48,6 +53,11 @@ The project demonstrates **real-world DevOps practices** such as Infrastructure 
 - Custom error page
 - Profile image integration
 - Lightweight & fast loading
+
+---
+## 📸 Website Preview
+
+![Portfolio Website Preview](screenshots/portfolio-preview.png)
 
 ---
 
